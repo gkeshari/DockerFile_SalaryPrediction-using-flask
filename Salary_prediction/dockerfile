@@ -1,0 +1,6 @@
+FROM python:3.7.4
+COPY . /user/app/
+EXPOSE 8080
+WORKDIR /user/app/
+RUN pip install -r requirements.txt
+CMD ["python","salary_app.py"]
